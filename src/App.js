@@ -113,16 +113,28 @@ export default function App() {
         <strong>3700+ talks</strong> to stir your curiosity
       </p>
       <small style={{ display: "block" }}>Find just the right one</small>
+      <hr />
       {Object.keys(tedTalksDataBase).map((genre) => {
         return (
-          <button onClick={() => genreBtnClickHandler(genre)}>{genre}</button>
+          <button
+            className="btn-genre"
+            key={genre}
+            onClick={() => genreBtnClickHandler(genre)}
+          >
+            {genre}
+          </button>
         );
       })}
       <hr />
       <div>{genre}</div>
       {tedTalksDataBase[genre].map((tedTalk) => {
         return (
-          <a href={tedTalk.link} target="_blank" rel="noreferrer">
+          <a
+            key={tedTalk.title}
+            href={tedTalk.link}
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={tedTalk.thumbnail} alt="ted-talk-thumbnail" />
             <em style={{ display: "block" }}>{tedTalk.speaker}</em>
             <h2>{tedTalk.title}</h2>
