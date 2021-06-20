@@ -107,6 +107,9 @@ export default function App() {
         <strong>3700+ talks</strong> to stir your curiosity
       </p>
       <small style={{ display: "block" }}>Find just the right one</small>
+      {Object.keys(tedTalksDataBase).map((genre) => {
+        return <button>{genre}</button>;
+      })}
     </div>
   );
 }
