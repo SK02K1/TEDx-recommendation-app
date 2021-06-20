@@ -126,21 +126,24 @@ export default function App() {
         );
       })}
       <hr />
-      <div>{genre}</div>
+      <h2>{genre}</h2>
       {tedTalksDataBase[genre].map((tedTalk) => {
         return (
           <a
+            className="card"
             key={tedTalk.title}
             href={tedTalk.link}
             target="_blank"
             rel="noreferrer"
           >
             <img src={tedTalk.thumbnail} alt="ted-talk-thumbnail" />
-            <em style={{ display: "block" }}>{tedTalk.speaker}</em>
-            <h2>{tedTalk.title}</h2>
-            <small>
-              <strong>Posted</strong> {tedTalk.postedOn}
-            </small>
+            <div className="talk-info">
+              <em>{tedTalk.speaker}</em>
+              <h3>{tedTalk.title}</h3>
+              <small>
+                <strong>Posted</strong> {tedTalk.postedOn}
+              </small>
+            </div>
           </a>
         );
       })}
