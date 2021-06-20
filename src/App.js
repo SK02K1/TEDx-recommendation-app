@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./styles.css";
 
 const tedTalksDataBase = {
@@ -98,6 +99,11 @@ const tedTalksDataBase = {
 };
 
 export default function App() {
+  // Hooks
+  const [genre, setGenre] = useState("");
+  // Function
+  const genreBtnClickHandler = (genre) => setGenre(genre);
+  // Main render
   return (
     <div className="App">
       <h1>
@@ -108,8 +114,12 @@ export default function App() {
       </p>
       <small style={{ display: "block" }}>Find just the right one</small>
       {Object.keys(tedTalksDataBase).map((genre) => {
-        return <button>{genre}</button>;
+        return (
+          <button onClick={() => genreBtnClickHandler(genre)}>{genre}</button>
+        );
       })}
+      <hr />
+      <div>{genre}</div>
     </div>
   );
 }
