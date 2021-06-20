@@ -100,7 +100,7 @@ const tedTalksDataBase = {
 
 export default function App() {
   // Hooks
-  const [genre, setGenre] = useState("");
+  const [genre, setGenre] = useState("Design");
   // Function
   const genreBtnClickHandler = (genre) => setGenre(genre);
   // Main render
@@ -120,6 +120,18 @@ export default function App() {
       })}
       <hr />
       <div>{genre}</div>
+      {tedTalksDataBase[genre].map((tedTalk) => {
+        return (
+          <a href={tedTalk.link} target="_blank" rel="noreferrer">
+            <img src={tedTalk.thumbnail} alt="ted-talk-thumbnail" />
+            <em style={{ display: "block" }}>{tedTalk.speaker}</em>
+            <h2>{tedTalk.title}</h2>
+            <small>
+              <strong>Posted</strong> {tedTalk.postedOn}
+            </small>
+          </a>
+        );
+      })}
     </div>
   );
 }
