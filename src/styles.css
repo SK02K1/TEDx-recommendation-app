@@ -19,10 +19,17 @@ a {
   cursor: pointer;
 }
 
+.ted-talk-list-container {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 2rem;
+}
+
 .card {
   display: block;
   overflow: hidden;
-  margin: 2rem auto;
+  margin: 0rem auto;
   width: 80%;
   border-radius: 0.625rem;
   text-align: left;
@@ -42,4 +49,34 @@ a {
 
 .card:hover {
   transform: scale(1.05);
+}
+
+@media screen and (min-width: 512px) {
+  .card {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .ted-talk-list-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1152px) {
+  .ted-talk-list-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .card {
+    width: 90%;
+  }
 }
