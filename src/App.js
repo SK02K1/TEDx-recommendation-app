@@ -95,6 +95,52 @@ const tedTalksDataBase = {
       link:
         "https://www.ted.com/talks/arvind_gupta_turning_trash_into_toys_for_learning"
     }
+  ],
+  Gaming: [
+    {
+      speaker: "William Collis",
+      title: "How video game skills can get you ahead in life",
+      postedOn: "Mar 2021",
+      thumbnail:
+        "https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/55b3f054-48f4-4e04-a8d3-c4edce9567c4/WilliamCollis_2020S-embed.jpg?quality=89&w=320",
+      link:
+        "https://www.ted.com/talks/william_collis_how_video_game_skills_can_get_you_ahead_in_life"
+    },
+    {
+      speaker: "David Cage",
+      title: "How video games turn players into storytellers",
+      postedOn: "Nov 2018",
+      thumbnail:
+        "https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/792baa18-d8d1-4078-bd43-17ee842ee42e/DavidCage_2018-embed.jpg?quality=89&w=320",
+      link:
+        "https://www.ted.com/talks/david_cage_how_video_games_turn_players_into_storytellers"
+    },
+    {
+      speaker: "Caitlin Holman",
+      title: "How game design can help schooling",
+      postedOn: "Aug 2020",
+      thumbnail:
+        "https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/f49f7586-20cb-47f2-a914-152e0b26b0d8/Caitlin+Holman.jpeg?quality=89&w=320",
+      link:
+        "https://www.ted.com/talks/caitlin_holman_how_game_design_can_help_schooling"
+    },
+    {
+      speaker: "Emmett Shear",
+      title: "What streaming means for the future of entertainment",
+      postedOn: "Sep 2019",
+      thumbnail:
+        "https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/fd804786-d7f8-4fda-8e62-4749df6b29fb/EmmettShear_2019-embed.jpg?quality=89&w=320",
+      link:
+        "https://www.ted.com/talks/emmett_shear_what_streaming_means_for_the_future_of_entertainment"
+    },
+    {
+      speaker: "Alex Gendler",
+      title: "A brief history of chess",
+      postedOn: "Sep 2019",
+      thumbnail:
+        "https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/0fc470d0-fa41-44e2-9dbe-8763f67183af/historyofchess4.jpg?quality=89&w=320",
+      link: "https://www.ted.com/talks/alex_gendler_a_brief_history_of_chess"
+    }
   ]
 };
 
